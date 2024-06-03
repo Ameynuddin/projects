@@ -1,0 +1,42 @@
+body{
+    background: lightblue;
+}
+
+.container{
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+table{
+    margin: auto;
+
+}
+
+input{
+    width: 300px;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(224, 81, 3);
+    width: 65px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.calculator{
+    background-color: lightyellow;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(39, 39, 215);
+}
+
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display{
+    width: 100%;
+    margin: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.container h1 span{
+    color: green;
+    padding: 15px 0;
+    border-bottom: 2px solid green;
+}
+
+#password{
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+}
+
+button{
+    margin: 10 px 0;
+    padding: 10px 10px;
+    background: green;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
