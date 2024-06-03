@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+
+    <style>      
+        header{
+            margin:0%;
+            background-color:#d5dd8d;
+            background-size:cover;
+            max-width: 100%;
+            
+            ol {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+        
+            li a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }   
+
+            li :hover {
+                background-color: purple;
+            }
+        }
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+            
+        .flex-container{
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            max-width: 100%;
+            background-color: #e9dba5d0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); 
+        }
+    
+        .flex-item{
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px){
+            body{
+                width: 100%;
+                height: auto;
+                font-size: 10px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ameynuddin Anis</h1>
+        <nav>
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <section>
+            <h2>Features</h2>
+            <p>Grab your opportunities ASAP!</p>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h2>Events Near You</h2>
+                    <p>Find events in your city here!</p>
+                </div>
+        
+                <div class="flex-item">
+                    <h2>Day Out with Celebs</h2>
+                    <p>Pop on board a train date adventure with your favourite artist!</p>
+                </div>
+        
+                <div class="flex-item">
+                    <h2>Afroman</h2>
+                    <p>On tour now!</p>
+                </div>
+            </div>
+    </section>
+
+    <article>
+        <h3>Events this week</h3>
+        <picture>
+            <source media="(max-width 767px)" srcset="concert.png" width="300" height="200">
+            <source media="(min-width 768px) and (max-width: 1023px)" srcset="concert.png" width="auto" height="400">
+            <img src="concert.png" alt="Live Concerts" width="auto" height="600">
+        </picture>
+    </article>
+
+    <aside>     
+        <h2>Related Links</h2>
+            <ul>
+                <li><a href="#">TicketWeb MY</a></li>
+                <li><a href="#">Sell Tickets with Us</a></li>
+                <li><a href="#">Client Sign-In</a></li>
+            </ul>
+    </aside>
+    <br><br>
+    <section id="contact"></section>
+
+        <svg width="400" height="200">
+            <rect width="400" height="50" style="fill:rgb(189, 189, 233);stroke-width:3;stroke:rgb(0,0,0)"/>
+            <text x="50%" y="15%" text-anchor="middle" fill="black" font-size="20">Reach Out to Us!</text>
+                 
+        </svg>
+
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    
+                <label for="Email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Leave us a message</legend>
+                <label for="msg">Message: </label>
+                <input type="text" id="msg" name="msg" required>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+    
+        <script>
+            function validateForm(){
+                var email = document.getElementById("email").value;
+                    
+                if(!email.includes("@")){
+                    alert("Please enter a valid email address.")
+                    return false;
+                }
+            
+                return true;
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 My Website | All rights reserved</p>
+    </footer>
+</body>
+</html>  
