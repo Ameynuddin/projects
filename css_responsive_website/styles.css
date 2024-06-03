@@ -1,0 +1,125 @@
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Applying positioning on header */
+        header{
+            position:sticky;
+            top: 0;
+            background-color: #f4faf1;
+        }
+        .navbar{
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            color: white;
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li{
+            padding: 0 10px;
+        }
+
+        .nav-links a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 16px;
+            transition: transform 0.5s ease-in-out, opacity 0.3 ease;
+        }
+
+        .nav-links a:hover{
+            color: rgb(37, 162, 9);
+            transform: scale(1);
+        }
+        
+        /* Using grid for article layout  */
+        section{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        article{
+            height: fit-content;
+            background-color: rgba(67, 159, 221, 0.886);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        /* Applying transitioning & transforming to images */
+        img{
+            max-width: 200px;
+            transition: transform 0.5s ease-in-out;        
+        }
+        img:hover{
+            transform: perspective(500px) rotateX(45deg);
+            transform: scale(1.2) rotate(360deg);
+        }
+
+        h1{
+            text-align: center;
+        }
+        h2{
+            color:rgb(240, 160, 12) ;
+            font-size: 2em;
+            line-height: 15px;
+        }
+        h3{
+            color:black;
+            font-style: italic;
+            font-size: 0.7em;
+            line-height: 5px;
+        }
+        legend{
+            color: #000;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 1em;    
+            margin-left:10%; 
+            text-align:justify; 
+            width: 80%;
+            line-height: 30px;
+        }
+        fieldset{
+            font-size: 1em;   
+            color: rgb(87, 3, 3); 
+            background-color: rgba(233, 238, 144, 0.867);
+        }
+
+        /* Fluid typography & layout */
+        @media screen and (min-width:768px) {
+            h2{
+                font-size: 1.7em;
+            }    
+            p{
+                font-size: 1.3em;
+            }  
+            article{
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            h2{
+                font-size: 2.5em;
+            }    
+            p{
+                font-size: 1.1em;
+            }  
+            article{
+                width: 95%;
+            }
+        }
+    
