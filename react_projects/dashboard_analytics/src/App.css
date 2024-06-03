@@ -1,0 +1,65 @@
+/* To make webpage occupy full screen  */
+/* html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.layout {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Style for Navbar */
+.navBar {
+  background-color: rgb(226, 188, 226);
+}
+
+/* Style for Different Sections */
+.col1 {
+  background-color: rgba(255, 252, 192, 0.551);
+}
+
+.col2 {
+  background-color: rgba(170, 193, 244, 0.551);
+}
+
+.col3 {
+  background-color: rgba(127, 241, 125, 0.551);
+}
+
+.col4 {
+  background-color: #c0c44a80;
+  text-align: center;
+  width: 100%;
+}
+
+.divider {
+  border-top: 2px solid #000;
+  width: 100%;
+}
+
+/* Style for Footer */
+.footer a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Ensured dashboard layout and components adapt to different screen sizes */
+@media (min-width: 480px) {
+  .layout {
+    display: grid;
+  }
+}
