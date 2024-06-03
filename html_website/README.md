@@ -5,7 +5,7 @@
 Semantic HTML:
 - Use appropriate semantic elements for different sections of your portfolio (header, about, projects, contact, etc.).
 - Include a header with your name and a navigation menu linking to various sections.
-- Use semantic elements like <article>, <section>, and <footer> where applicable.
+- Use semantic elements like '<article>', '<section>', and '<footer>' where applicable.
 
 Forms:
 - Create a contact form in the "Contact" section.
