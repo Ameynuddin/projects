@@ -1,7 +1,15 @@
-## Hackathon: "Full-Stack Web Development Challenge"
+## This is mini hackathon, i.e., collaborative work with other coders
+
+Link to hosted web: https://minihackathon-host.web.app/
+I used Firebase to host the web app.
+
+Link to the original team's repository: https://github.com/Ameynuddin/Group2
+
+
+### Hackathon: "Full-Stack Web Development Challenge"
 This hackathon is designed to encourage participants to apply their knowledge across the full stack of web development technologies covered during the bootcamp. 
 
-# OBJECTIVE
+## OBJECTIVE
 Participants will build a web application that incorporates various technologies covered in the bootcamp, showcasing their proficiency in HTML, CSS, JavaScript, React OR Vue, Bootstrap, Git, and GitHub.
 
 ## Hackathon Tasks
