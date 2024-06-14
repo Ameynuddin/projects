@@ -1,3 +1,6 @@
 [submodule "RockPaperScissors_Game"]
 	path = RockPaperScissors_Game
 	url = https://github.com/Ameynuddin/RockPaperScissors_Game
+[submodule "DAY_40-Hackathon"]
+	path = DAY_40-Hackathon
+	url = https://github.com/ZarinZaidi/DAY_40-Hackathon
