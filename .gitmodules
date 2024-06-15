@@ -4,3 +4,6 @@
 [submodule "DAY_40-Hackathon"]
 	path = DAY_40-Hackathon
 	url = https://github.com/ZarinZaidi/DAY_40-Hackathon
+[submodule "word-guess-game"]
+	path = word-guess-game
+	url = https://github.com/Ameynuddin/word-guess-game
